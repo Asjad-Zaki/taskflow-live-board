@@ -154,6 +154,7 @@ export const useUpdateProfile = () => {
         .single();
 
       if (error) throw error;
+
       
       return profileSchema.parse(data);
     },
