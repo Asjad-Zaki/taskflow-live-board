@@ -169,7 +169,7 @@ export const passwordChangeSchema = z.object({
   message: "Passwords don't match",
   path: ["confirmPassword"],
 });
-
+ 
 // Export types
 export type Profile = z.infer<typeof profileSchema>;
 export type Task = z.infer<typeof taskSchema>;
